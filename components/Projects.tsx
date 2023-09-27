@@ -10,13 +10,13 @@ const Projects = () => {
 	const { ref, inView } = useInView({
 		threshold: 0.5,
 	});
-	const { setActive } = useActiveSectionContext();
+	const { setActive, timeOfLClick } = useActiveSectionContext();
 
 	useEffect(() => {
-		if (inView) {
+		if (inView && Date.now() - timeOfLClick > 1000) {
 			setActive('Projects');
 		}
-	}, [inView, setActive]);
+	}, [inView, setActive, timeOfLClick]);
 
 	return (
 		<section className="scroll-mt-28" id="projects" ref={ref}>

@@ -1,5 +1,3 @@
-'use client';
-import React from 'react';
 import SectionHeading from './SectionHeading';
 import { skillsData } from '@/lib/data';
 import { useSectionInView } from '@/lib/hooks';

@@ -20,7 +20,7 @@ const Experience = () => {
 			className="scroll-mt-28 mb-28 sm:mb-40"
 		>
 			<SectionHeading>My experience</SectionHeading>
-			<VerticalTimeline lineColor="" layout="2-columns">
+			<VerticalTimeline lineColor="">
 				{experiencesData.map((item, index) => {
 					return (
 						<VerticalTimelineElement
